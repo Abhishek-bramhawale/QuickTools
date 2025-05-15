@@ -1,0 +1,110 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+#nav {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  padding: 16px;
+  background-color: #f3f4f6;
+
+}
+
+
+#treeicon{
+  width: 24px;
+        height: 24px;
+        margin-right: 8px;
+        margin-left: 0px;
+}
+
+#logo{
+        font-size: 1.125rem;
+        font-weight: 600;
+        margin-left: 20px;
+}
+
+#searchbar{
+  flex:1;
+  padding : 8px 12px;
+  margin-left: 50px;
+  margin-right: 20px;
+  border-radius: 20px;
+  /* width: 500px; */
+  
+}
+
+body.light-theme{
+  color:black;
+  background-color: white;
+}
+
+body.dark-theme{
+  color:white;
+  background-color:black
+}
+
+.dark-theme #nav {
+  background-color: #111827;
+}
+
+#themebtn{
+  margin-left: auto;
+  /* margin-left: 20px; */
+}
+
+/* .tool-title{
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 20px 0px 10px;
+  color: #333333;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+  text-align: center;
+} */
+
+
+
+
+.category-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 20px 0;
+  padding-left: 16px;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 16px;
+}
+
+.tool-card {
+  width: 150px;
+  padding: 12px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.tool-card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.tool-card img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  margin-bottom: 8px;
+}
+
+.tool-card p {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
