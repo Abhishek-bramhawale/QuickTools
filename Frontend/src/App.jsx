@@ -8,6 +8,17 @@ import currency from "./images/currency.png"
 import temp from "./images/temp.png"
 import length from "./images/length.png"
 import weight from "./images/weigth.png"
+import speed from "./images/speed.png"
+import volume from "./images/volume.png"
+import area from "./images/area.png"
+import time from "./images/time.png"
+import calc from "./images/calculator.png"
+import age from "./images/age.png"
+import date from "./images/date.png"
+import gst from "./images/gst.png"
+import text from "./images/text.png"
+import lorem from "./images/lorem.png"
+import pass from "./images/pass.png"
 
 // import textTools from "./images/textTools.png";
 // import qrCodeGen from "./images/qrCodeGen.png";
@@ -24,23 +35,23 @@ function App() {
     { title: "Temperature Converter", img: temp },
     { title: "Length Converter", img: length },
     { title: "Weight Converter", img: weight},
-    { title: "Speed Converter", img:  "./images/weight.png"},
-    { title: "Volume Converter", img: "./images/weight.png" },
-    { title: "Area Converter", img: "./images/weight.png" },
-    { title: "Time Converter", img: "./images/weight.png" },
+    { title: "Speed Converter", img:  speed},
+    { title: "Volume Converter", img: volume },
+    { title: "Area Converter", img: area },
+    { title: "Time Converter", img: time },
   ];
 
   const calculators = [
-    { title: "Basic Calculator", img: "./images/placeholder.png" },
-    { title: "Age Calculator", img: "./images/placeholder.png" },
-    { title: "Date difference Calculator", img: "./images/placeholder.png" },
-    { title: "GST Calculator", img: "./images/placeholder.png" },
+    { title: "Basic Calculator", img: calc},
+    { title: "Age Calculator", img:age },
+    { title: "Date difference Calculator", img: date },
+    { title: "GST Calculator", img: gst },
   ];
 
   const others = [
-    { title: "Text Text Case Converter", img: "./images/placeholder.png" },
-    { title: "Lorem Ipsum Generator",img: "./images/placeholder.png" },
-    { title: "Password Generator",img: "./images/placeholder.png" },
+    { title: "Text Text Case Converter", img: text},
+    { title: "Lorem Ipsum Generator",img: lorem },
+    { title: "Password Generator",img: pass },
    
   ];
 

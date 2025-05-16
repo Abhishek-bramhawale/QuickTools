@@ -77,16 +77,18 @@ body.dark-theme{
 .cards-container {
   display: flex;
   flex-wrap: wrap;
+  /* justify-content: space-evenly; */
   gap: 20px;
   padding: 16px;
 }
 
 .tool-card {
-  width: 150px;
-  padding: 12px;
+  width: 280px;
+  height: 150px;
+  padding: 20px;
   background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.433);
   text-align: center;
   transition: transform 0.2s ease;
 }
@@ -101,6 +103,7 @@ body.dark-theme{
   height: 64px;
   object-fit: contain;
   margin-bottom: 8px;
+  margin-top: 20px;
 }
 
 .tool-card p {
