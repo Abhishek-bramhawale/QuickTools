@@ -45,6 +45,30 @@ body.dark-theme{
   background-color:black
 }
 
+body.dark-theme .tool-card {
+  background: #2c3e50;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-theme .tool-card p {
+  color: #ecf0f1;
+}
+
+body.dark-theme .category-title {
+  color: #ecf0f1;
+  border-bottom: 2px solid #3498db;
+}
+
+/* Card.light-theme{
+  color:black;
+  background-color: white;
+}
+
+Card.dark-theme{
+  color:white;
+  background-color:black
+} */
+
 .dark-theme #nav {
   background-color: #111827;
 }
@@ -110,4 +134,134 @@ body.dark-theme{
   margin: 0;
   font-size: 0.9rem;
   font-weight: 500;
+}
+
+
+
+/* Text case generator css : */
+
+.text-converter-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.text-converter-container h1 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 0.5rem;
+}
+
+.text-converter-container input {
+  width: 96%;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.button-group button {
+  padding: 0.75rem 1.25rem;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.button-group button:hover {
+  background-color: #2980b9;
+}
+
+.output-container {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  border: 4px solid #3498db;
+}
+
+.output-container strong {
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+
+body.dark-theme .text-converter-container {
+  background-color: #2c3e50;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-theme .text-converter-container h1 {
+  color: #ecf0f1;
+}
+
+body.dark-theme .text-converter-container input {
+  background-color: #34495e;
+  border-color: #2c3e50;
+  color: #ecf0f1;
+}
+
+body.dark-theme .output-container {
+  background-color: #34495e;
+  color: #ecf0f1;
+}
+
+body.dark-theme .output-container strong {
+  color: #3498db;
+}
+
+
+
+
+/* Back button css: */
+.back-button {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  margin: 1rem 0;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.back-button:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.back-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+body.dark-theme .back-button {
+  background-color: #3498db;
+  color: white;
+}
+
+body.dark-theme .back-button:hover {
+  background-color: #2980b9;
 }

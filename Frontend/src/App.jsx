@@ -1,9 +1,11 @@
 import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
+import './index.css';
 import './App.css'
 import Header from "./components/Header.jsx";
 import Card from "./components/Card.jsx";
+import TextcaseConverter from "./components/TextCaseConverter.jsx"
 import currency from "./images/currency.png"
 import temp from "./images/temp.png"
 import length from "./images/length.png"
@@ -30,6 +32,7 @@ import pass from "./images/pass.png"
 // import time from "./images/time.png";
 
 function App() {
+  const [currentTool, setCurrentTool] = useState(null);
   const converters = [
     { title: "Currency Converter", img: currency },
     { title: "Temperature Converter", img: temp },
@@ -58,24 +61,32 @@ function App() {
 
   // const [count, setCount] = useState(0)
 
+  const handleCardClick = (toolTitle) => {
+    setCurrentTool(toolTitle);
+  };
+
+  const renderTool = () => {
+    switch(currentTool) {
+      case "Text Text Case Converter":
+        return <TextcaseConverter />;
+      default:
+        return (
+          <>
+            <Card title="Converters" tools={converters} onCardClick={handleCardClick} />
+            <Card title="calculators" tools={calculators} onCardClick={handleCardClick} />
+            <Card title="others" tools={others} onCardClick={handleCardClick} />
+          </>
+        );
+    }
+  };
+
   return (
     <>
-    <Header/>
-      {/* <h1 className="tool-title">Converters</h1><br />
-      <h1 className="tool-title">Calculators</h1><br />
-      <h1 className="tool-title">Day and Time Tools</h1><br />
-      <h1 className="tool-title">Others</h1>
-      
-      */}
-
-<Card title="Converters" tools={converters} />
-<Card title="calculators" tools={calculators} />
-<Card title="others" tools={others} />
-{/* <Card title="Day and Time Tools" tools={day} />
-<Card title="Others" tools={others} /> */}
-      
+      <Header/>
+      {currentTool && <button className="back-button" onClick={() => setCurrentTool(null)}>Back</button>}
+      {renderTool()}
     </>
-  )
+  );
 }
 
 export default App
