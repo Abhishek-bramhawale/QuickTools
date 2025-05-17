@@ -18,7 +18,6 @@ export default function Card({title,tools, onCardClick}){
           ))}
         </div>
       </div>
-
-        
+      
     )
 }

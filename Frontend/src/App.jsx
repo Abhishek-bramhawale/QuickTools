@@ -1,11 +1,11 @@
 import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
 import './index.css';
-import './App.css'
+// import './App.css'
 import Header from "./components/Header.jsx";
 import Card from "./components/Card.jsx";
 import TextcaseConverter from "./components/TextCaseConverter.jsx"
+import LoremIpsumGenerator from "./components/LoremIpsumGenerator.jsx"
+
 import currency from "./images/currency.png"
 import temp from "./images/temp.png"
 import length from "./images/length.png"
@@ -21,15 +21,6 @@ import gst from "./images/gst.png"
 import text from "./images/text.png"
 import lorem from "./images/lorem.png"
 import pass from "./images/pass.png"
-
-// import textTools from "./images/textTools.png";
-// import qrCodeGen from "./images/qrCodeGen.png";
-// import passwordGen from "./images/passwordGen.png";
-// import unitConverter from "./images/unitConverter.png";
-// import speed from "./images/speed.png";
-// import volume from "./images/volume.png";
-// import area from "./images/area.png";
-// import time from "./images/time.png";
 
 function App() {
   const [currentTool, setCurrentTool] = useState(null);
@@ -59,8 +50,6 @@ function App() {
   ];
 
 
-  // const [count, setCount] = useState(0)
-
   const handleCardClick = (toolTitle) => {
     setCurrentTool(toolTitle);
   };
@@ -69,6 +58,8 @@ function App() {
     switch(currentTool) {
       case "Text Text Case Converter":
         return <TextcaseConverter />;
+      case "Lorem Ipsum Generator":
+          return <LoremIpsumGenerator />;
       default:
         return (
           <>
