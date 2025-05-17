@@ -5,6 +5,7 @@ import Header from "./components/Header.jsx";
 import Card from "./components/Card.jsx";
 import TextcaseConverter from "./components/TextCaseConverter.jsx"
 import LoremIpsumGenerator from "./components/LoremIpsumGenerator.jsx"
+import PasswordGenerator from "./components/PasswordGenerator.jsx"
 
 import currency from "./images/currency.png"
 import temp from "./images/temp.png"
@@ -60,6 +61,8 @@ function App() {
         return <TextcaseConverter />;
       case "Lorem Ipsum Generator":
           return <LoremIpsumGenerator />;
+      case "Password Generator":
+            return <PasswordGenerator />;
       default:
         return (
           <>
