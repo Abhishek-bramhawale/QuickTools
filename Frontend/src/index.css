@@ -497,3 +497,66 @@ body.dark-theme .password-output {
 .equal-btn:hover {
   background-color: #2980b9;
 }
+
+
+/* age cal css  */
+.age-calculator {
+  padding: 20px;
+  max-width: 400px;
+  margin: 30px auto;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: sans-serif;
+}
+
+.age-calculator h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.age-calculator label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #34495e;
+}
+
+.age-calculator input[type="date"] {
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.age-calculator button {
+  padding: 10px 16px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.2s;
+}
+
+.age-calculator button:hover {
+  background-color: #2980b9;
+}
+
+.results {
+  margin-top: 20px;
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-left: 4px solid #3498db;
+  border-radius: 4px;
+  line-height: 1.8;
+}
+
+.results p strong {
+  color: #2c3e50;
+}

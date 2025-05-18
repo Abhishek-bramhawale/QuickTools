@@ -6,6 +6,7 @@ import TextcaseConverter from "./components/TextCaseConverter.jsx";
 import LoremIpsumGenerator from "./components/LoremIpsumGenerator.jsx";
 import PasswordGenerator from "./components/PasswordGenerator.jsx";
 import Calculator from "./components/Calculator.jsx"
+import AgeCalculator from "./components/AgeCalculator.jsx"
 
 import currency from "./images/currency.png";
 import temp from "./images/temp.png";
@@ -37,7 +38,7 @@ function App() {
 
   const calculators = [
     { title: "Basic Calculator", img: calc, path: "/calculator" },
-    { title: "Age Calculator", img: age },
+    { title: "Age Calculator", img: age, path:"/agecal" },
     { title: "Date difference Calculator", img: date },
     { title: "GST Calculator", img: gst },
   ];
@@ -65,6 +66,7 @@ function App() {
         <Route path="/lorem" element={<LoremIpsumGenerator />} />
         <Route path="/password" element={<PasswordGenerator />} />
         <Route path="/calculator" element={<Calculator />} />
+        <Route path="/agecal" element={<AgeCalculator />} />
       </Routes>
     </Router>
   );
