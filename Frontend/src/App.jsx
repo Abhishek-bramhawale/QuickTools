@@ -8,6 +8,7 @@ import PasswordGenerator from "./components/PasswordGenerator.jsx";
 import Calculator from "./components/Calculator.jsx"
 import AgeCalculator from "./components/AgeCalculator.jsx"
 import TempConverter from "./components/TempConverter.jsx"
+import LengthConverter from "./components/LengthConverter.jsx"
 
 import currency from "./images/currency.png";
 import temp from "./images/temp.png";
@@ -29,7 +30,7 @@ function App() {
   const converters = [
     { title: "Currency Converter", img: currency },
     { title: "Temperature Converter", img: temp, path: "/temperatureconverter" },
-    { title: "Length Converter", img: length },
+    { title: "Length Converter", img: length, path: "/lengthconverter" },
     { title: "Weight Converter", img: weight },
     { title: "Speed Converter", img: speed },
     { title: "Volume Converter", img: volume },
@@ -69,6 +70,7 @@ function App() {
         <Route path="/calculator" element={<Calculator />} />
         <Route path="/agecal" element={<AgeCalculator />} />
         <Route path="/temperatureconverter" element={<TempConverter />} />
+        <Route path="/lengthconverter" element={<LengthConverter />} />
       </Routes>
     </Router>
   );
