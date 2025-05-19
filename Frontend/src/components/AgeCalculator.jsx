@@ -40,6 +40,7 @@ export default function AgeCalculator() {
       <h2>Age Calculator</h2>
       <label>Enter your date of birth:</label>
       <input
+        className="ipagecal"
         type="date"
         value={dob}
         onChange={(e) => setDob(e.target.value)}
