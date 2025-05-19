@@ -29,7 +29,7 @@ export default function TempConverter(){
 
     return (
         <>
-        <div>
+        <div className="temperature-converter-container">
             <h2>Temperature converter</h2>
             <input type="number" placeholder="Enter value"  type="number" value={tempValue} onChange={(e) => setTempValue(e.target.value)} />
             <select value={tempUnit} onChange={(e) => setTempUnit(e.target.value)}>
