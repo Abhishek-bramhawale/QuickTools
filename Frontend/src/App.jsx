@@ -2,11 +2,12 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './index.css';
 import Header from "./components/Header.jsx";
 import Card from "./components/Card.jsx";
-import TextcaseConverter from "./components/TextCaseConverter.jsx";
+import TextcaseConverter from "./components/TextcaseConverter.jsx";
 import LoremIpsumGenerator from "./components/LoremIpsumGenerator.jsx";
 import PasswordGenerator from "./components/PasswordGenerator.jsx";
 import Calculator from "./components/Calculator.jsx"
 import AgeCalculator from "./components/AgeCalculator.jsx"
+import TempConverter from "./components/TempConverter.jsx"
 
 import currency from "./images/currency.png";
 import temp from "./images/temp.png";
@@ -27,7 +28,7 @@ import pass from "./images/pass.png";
 function App() {
   const converters = [
     { title: "Currency Converter", img: currency },
-    { title: "Temperature Converter", img: temp },
+    { title: "Temperature Converter", img: temp, path: "/temperatureconverter" },
     { title: "Length Converter", img: length },
     { title: "Weight Converter", img: weight },
     { title: "Speed Converter", img: speed },
@@ -67,6 +68,7 @@ function App() {
         <Route path="/password" element={<PasswordGenerator />} />
         <Route path="/calculator" element={<Calculator />} />
         <Route path="/agecal" element={<AgeCalculator />} />
+        <Route path="/temperatureconverter" element={<TempConverter />} />
       </Routes>
     </Router>
   );

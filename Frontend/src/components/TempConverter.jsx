@@ -1,4 +1,4 @@
-import React from {"react"}
+import React, { useState } from "react";
 
 export default function TempConverter(){
     const [tempValue, setTempValue] = useState("");
@@ -31,7 +31,7 @@ export default function TempConverter(){
         <>
         <div className="temperature-converter-container">
             <h2>Temperature converter</h2>
-            <input type="number" placeholder="Enter value"  type="number" value={tempValue} onChange={(e) => setTempValue(e.target.value)} />
+            <input type="number" placeholder="Enter value" value={tempValue} onChange={(e) => setTempValue(e.target.value)} />
             <select value={tempUnit} onChange={(e) => setTempUnit(e.target.value)}>
                 <option value="C">Celsius (°C)</option>
                 <option value="F">Fahrenheit (°C)</option>
