@@ -773,4 +773,25 @@ body.dark-theme .length-result {
   color: #2c3e50;
 }
 
+body.dark-theme .weight-converter-container {
+  background-color: #2c3e50;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-theme .weight-converter-container h2 {
+  color: #ecf0f1;
+}
+
+body.dark-theme .weight-converter-container input,
+body.dark-theme .weight-converter-container select {
+  background-color: #34495e;
+  border-color: #2c3e50;
+  color: #ecf0f1;
+}
+
+body.dark-theme .weight-result {
+  background-color: #34495e;
+  color: #ecf0f1;
+  border-color: #3498db;
+}
 
