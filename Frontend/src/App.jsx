@@ -9,6 +9,7 @@ import Calculator from "./components/Calculator.jsx"
 import AgeCalculator from "./components/AgeCalculator.jsx"
 import TempConverter from "./components/TempConverter.jsx"
 import LengthConverter from "./components/LengthConverter.jsx"
+import WeightConverter from "./components/WeightConverter"
 
 import currency from "./images/currency.png";
 import temp from "./images/temp.png";
@@ -31,7 +32,7 @@ function App() {
     { title: "Currency Converter", img: currency },
     { title: "Temperature Converter", img: temp, path: "/temperatureconverter" },
     { title: "Length Converter", img: length, path: "/lengthconverter" },
-    { title: "Weight Converter", img: weight },
+    { title: "Weight Converter", img: weight , path : "/weightconverter"},
     { title: "Speed Converter", img: speed },
     { title: "Volume Converter", img: volume },
     { title: "Area Converter", img: area },
@@ -71,6 +72,7 @@ function App() {
         <Route path="/agecal" element={<AgeCalculator />} />
         <Route path="/temperatureconverter" element={<TempConverter />} />
         <Route path="/lengthconverter" element={<LengthConverter />} />
+        <Route path="/weightconverter" element={<WeightConverter />} />
       </Routes>
     </Router>
   );
