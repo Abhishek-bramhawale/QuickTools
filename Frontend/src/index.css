@@ -233,32 +233,6 @@ body.dark-theme .output-container strong {
 
 
 
-/* Back button css: */
-.back-button {
-  display: inline-block;
-  padding: 0.6rem 1.2rem;
-  margin: 1rem 0;
-  background-color: #3498db;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.back-button:hover {
-  background-color: #2980b9;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.back-button:active {
-  transform: translateY(0);
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
-}
-
 body.dark-theme .back-button {
   background-color: #3498db;
   color: white;
@@ -572,6 +546,7 @@ body.dark-theme .password-output {
   background-color: #ffffff;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: sans-serif;
 }
 
 
@@ -580,7 +555,7 @@ body.dark-theme .password-output {
   color: #2c3e50;
   margin-bottom: 1.5rem;
   text-align: center;
-  border-bottom: 2px solid #3498db;
+  /* border-bottom: 2px solid #3498db; */
   padding-bottom: 0.5rem;
 }
 
@@ -723,3 +698,79 @@ body.dark-theme .length-result {
   color: #ecf0f1;
   border-left: 4px solid #3498db;
 }
+
+
+
+/* weight converter css  */
+
+.weight-converter-container {
+  padding: 20px;
+  max-width: 400px;
+  margin: 30px auto;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: sans-serif;
+}
+
+.weight-converter-container h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.weight-converter-container input {
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.unit-selectors {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.weight-converter-container select {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.weight-converter-container button {
+  padding: 10px 16px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.2s;
+}
+
+.weight-converter-container button:hover {
+  background-color: #2980b9;
+}
+
+.weight-result {
+  margin-top: 20px;
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-left: 4px solid #3498db;
+  border-radius: 4px;
+  line-height: 1.6;
+}
+
+.weight-result p strong {
+  color: #2c3e50;
+}
+
+
