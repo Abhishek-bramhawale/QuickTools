@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import {useState} from "react";
 import './index.css';
 import Header from "./components/Header.jsx";
 import Card from "./components/Card.jsx";
@@ -28,6 +29,14 @@ import lorem from "./images/lorem.png";
 import pass from "./images/pass.png";
 
 function App() {
+
+  const[searchTerm, setSearchTerm]= useState("");
+
+  const filterTools=(tools)=>
+    tools.filter((tool)=>
+      tool.title.toLowerCase().includes(searchTerm.toLowerCase())
+);
+
   const converters = [
     { title: "Currency Converter", img: currency },
     { title: "Temperature Converter", img: temp, path: "/temperatureconverter" },
@@ -54,14 +63,20 @@ function App() {
 
   return (
     <Router>
-      <Header />
+      <Header onSearch={setSearchTerm}/>
       <Routes>
         <Route path="/"
           element={
             <>
-              <Card title="Converters" tools={converters} />
-              <Card title="Calculators" tools={calculators} />
-              <Card title="Others" tools={others} />
+               {searchTerm.trim() === "" || filterTools(converters).length > 0 ? (
+                <Card title="Converters" tools={filterTools(converters)} />
+              ) : null}
+              {searchTerm.trim() === "" || filterTools(calculators).length > 0 ? (
+                <Card title="Calculators" tools={filterTools(calculators)} />
+              ) : null}
+              {searchTerm.trim() === "" || filterTools(others).length > 0 ? (
+                <Card title="Others" tools={filterTools(others)} />
+              ) : null}
             </>
           }
         />
