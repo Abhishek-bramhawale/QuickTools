@@ -1040,3 +1040,83 @@ body.dark-theme .area-result {
   color: #ecf0f1;
   border-left: 4px solid #3498db;
 }
+
+
+
+/* time conv styling 
+
+*/
+
+.time-converter {
+  padding: 20px;
+  max-width: 400px;
+  margin: 30px auto;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: sans-serif;
+}
+
+.time-converter h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.time-converter input[type="number"],
+.time-converter select {
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.time-converter button {
+  padding: 10px 16px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.2s;
+}
+
+.time-converter button:hover {
+  background-color: #2980b9;
+}
+
+.time-result {
+  margin-top: 20px;
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-left: 4px solid #3498db;
+  border-radius: 4px;
+  line-height: 1.8;
+  color: #2c3e50;
+}
+
+body.dark-theme .time-converter {
+  background-color: #2c3e50;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-theme .time-converter h2 {
+  color: #ecf0f1;
+}
+
+body.dark-theme .time-converter input,
+body.dark-theme .time-converter select {
+  background-color: #34495e;
+  border-color: #2c3e50;
+  color: #ecf0f1;
+}
+
+body.dark-theme .time-result {
+  background-color: #34495e;
+  color: #ecf0f1;
+  border-left: 4px solid #3498db;
+}
