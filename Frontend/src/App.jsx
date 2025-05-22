@@ -13,6 +13,7 @@ import LengthConverter from "./components/LengthConverter.jsx"
 import WeightConverter from "./components/WeightConverter"
 import SpeedConverter from "./components/SpeedConverter"
 import VolumeConverter from "./components/VolumeConverter.jsx"
+import AreaConverter from "./components/AreaConverter.jsx"
 
 import currency from "./images/currency.png";
 import temp from "./images/temp.png";
@@ -46,7 +47,7 @@ function App() {
     { title: "Weight Converter (implemented)", img: weight , path : "/weightconverter"},
     { title: "Speed Converter (implemented)", img: speed , path: "/SpeedConverter"},
     { title: "Volume Converter", img: volume, path: "/VolumeConverter" },
-    { title: "Area Converter", img: area },
+    { title: "Area Converter", img: area, path: "/AreaConverter" },
     { title: "Time Converter", img: time },
   ];
 
@@ -92,6 +93,7 @@ function App() {
         <Route path="/weightconverter" element={<WeightConverter />} />
         <Route path="/SpeedConverter" element={<SpeedConverter />} />
         <Route path="/VolumeConverter" element={<VolumeConverter />} />
+        <Route path="/AreaConverter" element={<AreaConverter />} />
       </Routes>
     </Router>
   );
