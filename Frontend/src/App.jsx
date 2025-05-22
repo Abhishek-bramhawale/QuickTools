@@ -11,6 +11,7 @@ import AgeCalculator from "./components/AgeCalculator.jsx"
 import TempConverter from "./components/TempConverter.jsx"
 import LengthConverter from "./components/LengthConverter.jsx"
 import WeightConverter from "./components/WeightConverter"
+import SpeedConverter from "./components/SpeedConverter"
 
 import currency from "./images/currency.png";
 import temp from "./images/temp.png";
@@ -39,26 +40,26 @@ function App() {
 
   const converters = [
     { title: "Currency Converter", img: currency },
-    { title: "Temperature Converter", img: temp, path: "/temperatureconverter" },
-    { title: "Length Converter", img: length, path: "/lengthconverter" },
-    { title: "Weight Converter", img: weight , path : "/weightconverter"},
-    { title: "Speed Converter", img: speed },
+    { title: "Temperature Converter (implemented)", img: temp, path: "/temperatureconverter" },
+    { title: "Length Converter (implemented)", img: length, path: "/lengthconverter" },
+    { title: "Weight Converter (implemented)", img: weight , path : "/weightconverter"},
+    { title: "Speed Converter", img: speed , path: "/SpeedConverter"},
     { title: "Volume Converter", img: volume },
     { title: "Area Converter", img: area },
     { title: "Time Converter", img: time },
   ];
 
   const calculators = [
-    { title: "Basic Calculator", img: calc, path: "/calculator" },
-    { title: "Age Calculator", img: age, path:"/agecal" },
+    { title: "Basic Calculator (implemented)", img: calc, path: "/calculator" },
+    { title: "Age Calculator (implemented)", img: age, path:"/agecal" },
     { title: "Date difference Calculator", img: date },
     { title: "GST Calculator", img: gst },
   ];
 
   const others = [
-    { title: "Text Text Case Converter", img: text, path: "/text-case" },
-    { title: "Lorem Ipsum Generator", img: lorem, path: "/lorem" },
-    { title: "Password Generator", img: pass, path: "/password" },
+    { title: "Text Text Case Converter (implemented)", img: text, path: "/text-case" },
+    { title: "Lorem Ipsum Generator (implemented)", img: lorem, path: "/lorem" },
+    { title: "Password Generator (implemented)", img: pass, path: "/password" },
   ];
 
   return (
@@ -88,6 +89,7 @@ function App() {
         <Route path="/temperatureconverter" element={<TempConverter />} />
         <Route path="/lengthconverter" element={<LengthConverter />} />
         <Route path="/weightconverter" element={<WeightConverter />} />
+        <Route path="/SpeedConverter" element={<SpeedConverter />} />
       </Routes>
     </Router>
   );
