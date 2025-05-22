@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import './VolumeConverter.css'; // Ensure you link the matching CSS
 
 const volumeUnits = {
   'Cubic Meter': 1,
@@ -28,10 +27,10 @@ const VolumeConverter = () => {
   };
 
   return (
-    <div className="volume-converter-container">
+    <div className="volume-converter">
       <h2>Volume Converter</h2>
       <div>
-        <label>Enter Value:</label>
+        {/* <label>Enter Value:</label> */}
         <input
           type="number"
           value={inputValue}
@@ -41,7 +40,7 @@ const VolumeConverter = () => {
       </div>
 
       <div>
-        <label>From:</label>
+        {/* <label>From:</label> */}
         <select value={fromUnit} onChange={(e) => setFromUnit(e.target.value)}>
           {Object.keys(volumeUnits).map((unit) => (
             <option key={unit} value={unit}>
@@ -64,7 +63,7 @@ const VolumeConverter = () => {
 
       <button onClick={convertVolume}>Convert</button>
 
-      {result && <div className="volume-output">{result}</div>}
+      {result && <div className="volume-result">{result}</div>}
     </div>
   );
 };
