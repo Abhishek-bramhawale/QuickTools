@@ -43,7 +43,7 @@ function App() {
     { title: "Temperature Converter (implemented)", img: temp, path: "/temperatureconverter" },
     { title: "Length Converter (implemented)", img: length, path: "/lengthconverter" },
     { title: "Weight Converter (implemented)", img: weight , path : "/weightconverter"},
-    { title: "Speed Converter", img: speed , path: "/SpeedConverter"},
+    { title: "Speed Converter (implemented)", img: speed , path: "/SpeedConverter"},
     { title: "Volume Converter", img: volume },
     { title: "Area Converter", img: area },
     { title: "Time Converter", img: time },
