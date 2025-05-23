@@ -15,6 +15,7 @@ import SpeedConverter from "./components/SpeedConverter"
 import VolumeConverter from "./components/VolumeConverter.jsx"
 import AreaConverter from "./components/AreaConverter.jsx"
 import TimeConverter from "./components/TimeConverter.jsx"
+import DateDiffCalculator from "./components/DateDiffCalculator.jsx"
 
 import currency from "./images/currency.png";
 import temp from "./images/temp.png";
@@ -55,7 +56,7 @@ function App() {
   const calculators = [
     { title: "Basic Calculator (implemented)", img: calc, path: "/calculator" },
     { title: "Age Calculator (implemented)", img: age, path:"/agecal" },
-    { title: "Date difference Calculator", img: date },
+    { title: "Date difference Calculator", img: date, path: "/DateDiffCalculator" },
     { title: "GST Calculator", img: gst },
   ];
 
@@ -96,6 +97,7 @@ function App() {
         <Route path="/VolumeConverter" element={<VolumeConverter />} />
         <Route path="/AreaConverter" element={<AreaConverter />} />
         <Route path="/TimeConverter" element={<TimeConverter />} />
+        <Route path="/DateDiffCalculator" element={<DateDiffCalculator />} />
       </Routes>
     </Router>
   );
