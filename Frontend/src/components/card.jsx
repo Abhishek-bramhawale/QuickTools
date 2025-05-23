@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function Card({ title, tools }) {
+const Card = ({ title, tools }) => {
   return (
     <div>
       <h1 className="category-title">{title}</h1>
@@ -20,4 +20,6 @@ export default function Card({ title, tools }) {
       </div>
     </div>
   );
-}
+};
+
+export default Card;
