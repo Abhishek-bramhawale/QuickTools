@@ -16,6 +16,8 @@ import VolumeConverter from "./components/VolumeConverter.jsx"
 import AreaConverter from "./components/AreaConverter.jsx"
 import TimeConverter from "./components/TimeConverter.jsx"
 import DateDiffCalculator from "./components/DateDiffCalculator.jsx"
+import GstCalculator from "./components/GstCalculator.jsx"
+import CurrencyConverter from "./components/CurrencyConverter.jsx"
 
 import currency from "./images/currency.png";
 import temp from "./images/temp.png";
@@ -43,7 +45,7 @@ function App() {
 );
 
   const converters = [
-    { title: "Currency Converter", img: currency },
+    { title: "Currency Converter", img: currency, path: "/CurrencyConverter" },
     { title: "Temperature Converter (implemented)", img: temp, path: "/temperatureconverter" },
     { title: "Length Converter (implemented)", img: length, path: "/lengthconverter" },
     { title: "Weight Converter (implemented)", img: weight , path : "/weightconverter"},
@@ -57,7 +59,7 @@ function App() {
     { title: "Basic Calculator (implemented)", img: calc, path: "/calculator" },
     { title: "Age Calculator (implemented)", img: age, path:"/agecal" },
     { title: "Date difference Calculator", img: date, path: "/DateDiffCalculator" },
-    { title: "GST Calculator", img: gst },
+    { title: "GST Calculator", img: gst , path: "/GstCalculator"},
   ];
 
   const others = [
@@ -98,6 +100,8 @@ function App() {
         <Route path="/AreaConverter" element={<AreaConverter />} />
         <Route path="/TimeConverter" element={<TimeConverter />} />
         <Route path="/DateDiffCalculator" element={<DateDiffCalculator />} />
+        <Route path="/GstCalculator" element={<GstCalculator />} />
+        <Route path="/CurrencyConverter" element={<CurrencyConverter />} />
       </Routes>
     </Router>
   );
