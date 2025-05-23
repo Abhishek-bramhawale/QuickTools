@@ -39,7 +39,8 @@ export default function TempConverter(){
 
             </select>
             <button onClick={convertTemperature}>convert</button>
-            <p className="temperature-result">{tempResult}</p>
+            {tempResult && <p className="temperature-result">{tempResult}</p>}
+
         </div>
         </>
     )

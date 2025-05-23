@@ -46,26 +46,26 @@ function App() {
 
   const converters = [
     { title: "Currency Converter", img: currency, path: "/CurrencyConverter" },
-    { title: "Temperature Converter (implemented)", img: temp, path: "/temperatureconverter" },
-    { title: "Length Converter (implemented)", img: length, path: "/lengthconverter" },
-    { title: "Weight Converter (implemented)", img: weight , path : "/weightconverter"},
-    { title: "Speed Converter (implemented)", img: speed , path: "/SpeedConverter"},
+    { title: "Temperature Converter", img: temp, path: "/temperatureconverter" },
+    { title: "Length Converter", img: length, path: "/lengthconverter" },
+    { title: "Weight Converter", img: weight , path : "/weightconverter"},
+    { title: "Speed Converter", img: speed , path: "/SpeedConverter"},
     { title: "Volume Converter", img: volume, path: "/VolumeConverter" },
     { title: "Area Converter", img: area, path: "/AreaConverter" },
     { title: "Time Converter", img: time, path: "/TimeConverter" },
   ];
 
   const calculators = [
-    { title: "Basic Calculator (implemented)", img: calc, path: "/calculator" },
-    { title: "Age Calculator (implemented)", img: age, path:"/agecal" },
+    { title: "Basic Calculator", img: calc, path: "/calculator" },
+    { title: "Age Calculator", img: age, path:"/agecal" },
     { title: "Date difference Calculator", img: date, path: "/DateDiffCalculator" },
     { title: "GST Calculator", img: gst , path: "/GstCalculator"},
   ];
 
   const others = [
-    { title: "Text Text Case Converter (implemented)", img: text, path: "/text-case" },
-    { title: "Lorem Ipsum Generator (implemented)", img: lorem, path: "/lorem" },
-    { title: "Password Generator (implemented)", img: pass, path: "/password" },
+    { title: "Text Text Case Converter", img: text, path: "/text-case" },
+    { title: "Lorem Ipsum Generator", img: lorem, path: "/lorem" },
+    { title: "Password Generator", img: pass, path: "/password" },
   ];
 
   return (
