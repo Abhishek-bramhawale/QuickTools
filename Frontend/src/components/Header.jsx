@@ -10,7 +10,7 @@ export default function Header({ onSearch }) {
 
   return (
     <nav id="nav">
-      <Menu id="treeicon" />
+      {/* <Menu id="treeicon" /> */}
       <h1 id="logo">QuickTools</h1>
       <input
         id="searchbar"

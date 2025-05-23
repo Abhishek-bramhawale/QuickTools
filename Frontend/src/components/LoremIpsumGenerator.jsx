@@ -33,9 +33,11 @@ export default function LoremIpsumGenerator() {
   />
   <button onClick={handleGenerate}>Generate</button>
 
+  {output && (
   <div className="lorem-output-container">
     <p>{output}</p>
   </div>
+)}
 </div>
 
   );
