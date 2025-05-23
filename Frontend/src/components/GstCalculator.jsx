@@ -37,10 +37,11 @@ const GSTCalculator = () => {
       <div>
         <label>GST Rate (%):</label>
         <select value={gstRate} onChange={(e) => setGstRate(Number(e.target.value))}>
-          <option value={5}>5%</option>
-          <option value={12}>12%</option>
-          <option value={18}>18%</option>
-          <option value={28}>28%</option>
+        <option value={5}>5% - Essentials</option>
+        <option value={12}>12% - Processed Food</option>
+        <option value={18}>18% - Electronics</option>
+        <option value={28}>28% - Luxury Items</option>
+
         </select>
       </div>
 
