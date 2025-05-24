@@ -18,6 +18,8 @@ import TimeConverter from "./components/TimeConverter.jsx"
 import DateDiffCalculator from "./components/DateDiffCalculator.jsx"
 import GstCalculator from "./components/GstCalculator.jsx"
 import CurrencyConverter from "./components/CurrencyConverter.jsx"
+import QrcodeGenerator from "./components/QrcodeGenerator.jsx"
+
 
 import currency from "./images/currency.png";
 import temp from "./images/temp.png";
@@ -34,6 +36,7 @@ import gst from "./images/gst.png";
 import text from "./images/text.png";
 import lorem from "./images/lorem.png";
 import pass from "./images/pass.png";
+import qr from "./images/qr.png";
 
 function App() {
 
@@ -66,6 +69,7 @@ function App() {
     { title: "Text Text Case Converter", img: text, path: "/text-case" },
     { title: "Lorem Ipsum Generator", img: lorem, path: "/lorem" },
     { title: "Password Generator", img: pass, path: "/password" },
+    { title: "QR code Generator", img: qr, path: "/QrcodeGenerator" },
   ];
 
   return (
@@ -103,6 +107,7 @@ function App() {
         <Route path="/DateDiffCalculator" element={<DateDiffCalculator />} />
         <Route path="/GstCalculator" element={<GstCalculator />} />
         <Route path="/CurrencyConverter" element={<CurrencyConverter />} />
+        <Route path="/QrcodeGenerator" element={<QrcodeGenerator />} />
       </Routes>
     </Router>
   );
