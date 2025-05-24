@@ -75,12 +75,13 @@ function App() {
         <Route path="/"
           element={
             <>
+               {searchTerm.trim() === "" || filterTools(calculators).length > 0 ? (
+                <Card1 title="Calculators" tools={filterTools(calculators)} />
+              ) : null}
                {searchTerm.trim() === "" || filterTools(converters).length > 0 ? (
                 <Card1 title="Converters" tools={filterTools(converters)} />
               ) : null}
-              {searchTerm.trim() === "" || filterTools(calculators).length > 0 ? (
-                <Card1 title="Calculators" tools={filterTools(calculators)} />
-              ) : null}
+              
               {searchTerm.trim() === "" || filterTools(others).length > 0 ? (
                 <Card1 title="Others" tools={filterTools(others)} />
               ) : null}

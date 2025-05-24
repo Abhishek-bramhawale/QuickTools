@@ -194,8 +194,8 @@ Card.dark-theme{
   padding-bottom: 0.5rem;
 }
 
-.text-converter-container input {
-  width: 96%;
+.text-converter-container input[type="text"] {
+  width: 90%;
   padding: 1rem;
   font-size: 1rem;
   border: 1px solid #ddd;
@@ -450,7 +450,7 @@ body.dark-theme .password-output {
 
 
 .calc-container {
-  width: 300px;
+  width: 250px;
   margin: 2rem auto;
   background-color: #1c1c1c;
   border-radius: 12px;
@@ -485,7 +485,7 @@ body.dark-theme .password-output {
 }
 
 .calc-buttons button {
-  padding: 20px;
+  padding: 15px;
   font-size: 1.2rem;
   background-color: #333;
   color: white;
@@ -572,6 +572,34 @@ body.dark-theme .password-output {
 }
 
 
+
+body.dark-theme .age-calculator  {
+  background-color: #2c3e50;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-theme .age-calculator h2 {
+  color: #ecf0f1;
+}
+
+body.dark-theme .age-calculator label {
+  color: #ecf0f1;
+}
+
+body.dark-theme.age-calculator input {
+  background-color: #34495e;
+  border-color: #2c3e50;
+  color: #ecf0f1;
+}
+
+/* body.dark-theme {
+  background-color: #34495e;
+  color: #ecf0f1;
+  border-left: 4px solid #3498db;
+} */
+
+
+
 /* temp converter css : */
 
 
@@ -596,7 +624,15 @@ body.dark-theme .password-output {
 }
 
 
-.temperature-converter-container input,
+.temperature-converter-container input[type="number"]{
+  width: 90%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
 .temperature-converter-container select {
   width: 100%;
   padding: 0.75rem;
@@ -1329,9 +1365,16 @@ body.dark-theme .gst-result {
   margin-bottom: 20px;
 }
 
-.currency-converter-container input,
-.currency-converter-container select {
+.currency-converter-container input{
   width: 95%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+.currency-converter-container select {
+  width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -1472,7 +1515,7 @@ body.dark-theme .currency-output {
   .cards-container {
     grid-template-columns: 1fr;
     gap: 10px;
-    padding: 0 20px;
+    padding: 0 15px;
     margin: 0 auto;
     overflow-x: hidden;
   }
@@ -1481,6 +1524,7 @@ body.dark-theme .currency-output {
     min-height: 140px;
     padding: 10px;
     width: auto;
+    margin: 0;
     box-sizing: border-box;
   }
 
@@ -1499,7 +1543,7 @@ body.dark-theme .currency-output {
   .text-converter-container,
   .lorem-generator-container,
   .password-generator-container,
-  .calc-container,
+  /* .calc-container, */
   .age-calculator,
   .temperature-converter-container,
   .length-converter,
@@ -1513,7 +1557,7 @@ body.dark-theme .currency-output {
   .currency-converter-container {
     padding: 1rem;
     margin: 1rem;
-    width: calc(100% - 2rem);
+    width: calc(90% - 2rem);
   }
 
   .button-group {
