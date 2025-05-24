@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Card = ({ title, tools }) => {
+const Card1 = ({ title, tools }) => {
   return (
     <div>
       <h1 className="category-title">{title}</h1>
@@ -22,4 +22,4 @@ const Card = ({ title, tools }) => {
   );
 };
 
-export default Card;
+export default Card1;

@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import {useState} from "react";
 import './index.css';
 import Header from "./components/Header.jsx";
-import Card from "./components/Card.jsx";
+import Card1 from "./components/Card1.jsx"
 import TextcaseConverter from "./components/TextcaseConverter.jsx";
 import LoremIpsumGenerator from "./components/LoremIpsumGenerator.jsx";
 import PasswordGenerator from "./components/PasswordGenerator.jsx";
@@ -76,13 +76,13 @@ function App() {
           element={
             <>
                {searchTerm.trim() === "" || filterTools(converters).length > 0 ? (
-                <Card title="Converters" tools={filterTools(converters)} />
+                <Card1 title="Converters" tools={filterTools(converters)} />
               ) : null}
               {searchTerm.trim() === "" || filterTools(calculators).length > 0 ? (
-                <Card title="Calculators" tools={filterTools(calculators)} />
+                <Card1 title="Calculators" tools={filterTools(calculators)} />
               ) : null}
               {searchTerm.trim() === "" || filterTools(others).length > 0 ? (
-                <Card title="Others" tools={filterTools(others)} />
+                <Card1 title="Others" tools={filterTools(others)} />
               ) : null}
             </>
           }
