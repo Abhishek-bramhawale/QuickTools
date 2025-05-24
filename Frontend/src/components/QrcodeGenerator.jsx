@@ -42,7 +42,7 @@ export default function QrcodeGenerator() {
         {text ? (
           <QRCodeCanvas value={text} size={200} />
         ) : (
-          <p>Enter text to generate QR code</p>
+          <p>Enter text or URL to generate QR code</p>
         )}
       </div>
       {text && (
