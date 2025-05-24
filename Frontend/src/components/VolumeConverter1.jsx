@@ -9,7 +9,7 @@ const volumeUnits = {
 
 };
 
-const VolumeConverter = () => {
+const VolumeConverter1 = () => {
   const [inputValue, setInputValue] = useState('');
   const [fromUnit, setFromUnit] = useState('Liter');
   const [toUnit, setToUnit] = useState('Milliliter');
@@ -68,4 +68,4 @@ const VolumeConverter = () => {
   );
 };
 
-export default VolumeConverter;
+export default VolumeConverter1;

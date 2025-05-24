@@ -12,7 +12,7 @@ import TempConverter from "./components/TempConverter.jsx"
 import LengthConverter from "./components/LengthConverter.jsx"
 import WeightConverter from "./components/WeightConverter"
 import SpeedConverter from "./components/SpeedConverter"
-import VolumeConverter from "./components/VolumeConverter.jsx"
+import VolumeConverter1 from "./components/VolumeConverter1.jsx"
 import AreaConverter from "./components/AreaConverter.jsx"
 import TimeConverter from "./components/TimeConverter.jsx"
 import DateDiffCalculator from "./components/DateDiffCalculator.jsx"
@@ -50,7 +50,7 @@ function App() {
     { title: "Length Converter", img: length, path: "/lengthconverter" },
     { title: "Weight Converter", img: weight , path : "/weightconverter"},
     { title: "Speed Converter", img: speed , path: "/SpeedConverter"},
-    { title: "Volume Converter", img: volume, path: "/VolumeConverter" },
+    { title: "Volume Converter", img: volume, path: "/VolumeConverter1" },
     { title: "Area Converter", img: area, path: "/AreaConverter" },
     { title: "Time Converter", img: time, path: "/TimeConverter" },
   ];
@@ -96,7 +96,7 @@ function App() {
         <Route path="/lengthconverter" element={<LengthConverter />} />
         <Route path="/weightconverter" element={<WeightConverter />} />
         <Route path="/SpeedConverter" element={<SpeedConverter />} />
-        <Route path="/VolumeConverter" element={<VolumeConverter />} />
+        <Route path="/VolumeConverter1" element={<VolumeConverter1 />} />
         <Route path="/AreaConverter" element={<AreaConverter />} />
         <Route path="/TimeConverter" element={<TimeConverter />} />
         <Route path="/DateDiffCalculator" element={<DateDiffCalculator />} />
