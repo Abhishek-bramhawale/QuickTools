@@ -5,13 +5,12 @@
 #nav {
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
   padding: 16px;
   background-color: #f3f4f6;
-
+  flex-wrap: nowrap;
+  gap: 10px;
+  position: relative;
 }
-
-
 
 img{
   border-radius: 90%;
@@ -30,15 +29,13 @@ img{
         margin-left: 20px;
 }
 
-#searchbar{
-  flex:1;
-  padding : 8px 12px;
-  margin-left: 50px;
-  margin-right: 20px;
+#searchbar {
+  flex: 1;
+  min-width: 200px;
+  padding: 8px 12px;
+  margin: 10px 20px;
   border-radius: 20px;
   transition: transform 0.2s ease;
-  /* width: 500px; */
-  
 }
 
 #searchbar:hover {
@@ -86,7 +83,7 @@ Card.dark-theme{
 
 #themebtn{
   margin-left: auto;
-  /* margin-left: 20px; */
+  white-space: nowrap;
 }
 
 /* .tool-title{
@@ -108,25 +105,26 @@ Card.dark-theme{
 }
 
 .cards-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding: 16px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 20px;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .tool-card {
-  position: relative;
-  overflow: hidden;
-  z-index: 0;
-
-  width: 312px;
-  height: 180px;
+  width: 100%;
+  height: auto;
+  min-height: 180px;
   padding: 20px;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.433);
   text-align: center;
   transition: transform 0.2s ease;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .tool-card:hover {
@@ -135,7 +133,7 @@ Card.dark-theme{
 }
 
 /* SHINE EFFECT */
-.tool-card::before {
+/* .tool-card::before {
   content: '';
   position: absolute;
   top: -50%;
@@ -157,10 +155,7 @@ Card.dark-theme{
 
 .tool-card:hover::before {
   left: 125%;
-}
-
-
-
+} */
 
 .tool-card img {
   width: 80px;
@@ -1391,4 +1386,151 @@ body.dark-theme .currency-output {
   background-color: #34495e;
   color: #ecf0f1;
   border-left: 4px solid #3498db;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .tool-card::before {
+    display: none; /* Disable shine effect on smaller screens */
+  }
+
+  #nav {
+    padding: 10px;
+    flex-wrap: wrap;
+  }
+
+  #logo {
+    font-size: 1.2rem;
+    margin-left: 10px;
+  }
+
+  #searchbar {
+    margin: 10px;
+    width: calc(100% - 20px);
+    order: 3;
+  }
+
+  #themebtn {
+    margin-left: 0;
+    order: 2;
+  }
+
+  .category-title {
+    font-size: 1.2rem;
+    padding-left: 10px;
+  }
+
+  .cards-container {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 0 10px;
+    margin: 0 auto;
+    overflow-x: hidden;
+  }
+
+  .tool-card {
+    min-height: 160px;
+    padding: 15px;
+    width: auto;
+    box-sizing: border-box;
+  }
+
+  .tool-card img {
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+  }
+
+  .tool-card p {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #logo {
+    text-align: left;
+    margin: 0;
+    order: 1;
+  }
+
+  #themebtn {
+    order: 2;
+  }
+
+  #searchbar {
+    order: 3;
+    margin: 10px 0;
+  }
+
+  .cards-container {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 0 20px;
+    margin: 0 auto;
+    overflow-x: hidden;
+  }
+
+  .tool-card {
+    min-height: 140px;
+    padding: 10px;
+    width: auto;
+    box-sizing: border-box;
+  }
+
+  .tool-card img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .tool-card p {
+    font-size: 0.8rem;
+  }
+}
+
+/* Converter and Calculator specific responsive styles */
+@media screen and (max-width: 768px) {
+  .text-converter-container,
+  .lorem-generator-container,
+  .password-generator-container,
+  .calc-container,
+  .age-calculator,
+  .temperature-converter-container,
+  .length-converter,
+  .weight-converter-container,
+  .speed-converter-container,
+  .volume-converter,
+  .area-converter,
+  .time-converter,
+  .date-diff-calculator,
+  .gst-calculator,
+  .currency-converter-container {
+    padding: 1rem;
+    margin: 1rem;
+    width: calc(100% - 2rem);
+  }
+
+  .button-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .button-group button {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  input[type="text"],
+  input[type="number"],
+  input[type="date"],
+  select {
+    width: 100%;
+    margin: 5px 0;
+  }
 }
